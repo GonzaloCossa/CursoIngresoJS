@@ -9,7 +9,7 @@ function mostrar()
 
  nombre = PROMPT("Ingrese su nombre");
 
- document.getElementsById('txtIdNombre').value = nombre; 
+ document.getElementById('txtIdNombre').value = nombre; 
 
 }
 
