@@ -6,8 +6,7 @@ function mostrar()
 {
 	var "ID.value"
 
-	=PROMPT()
+	=PROMPT(alert("ID.value");)
 
-	alert("ID.value");
 }
 
