@@ -9,6 +9,8 @@ function mostrar(){
 	var nombreDeUsuario;
 	nombreDeUsuario = document.getElementById("txtIdNombre").value;	
 	alert(nombreDeUsuario);
+	console.log(nombreDeUsuario)
+
 }
 
 
