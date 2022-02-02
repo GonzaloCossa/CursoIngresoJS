@@ -7,7 +7,7 @@ en el cuadro de texto "RESULTADO".
 Gonzalo Cossa E/S Ejercicio 9
 Div B
 */
-function mostrarAumento() {
+function mostrarAumento() {  
 	var valorSueldo;
 	var valorPorcentaje;
 	var resultado;
