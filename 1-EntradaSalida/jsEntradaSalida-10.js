@@ -13,7 +13,6 @@ function mostrarAumento() {
 	var resultado;
 
 	importe = document.getElementById("txtIdImporte").value;
-	resultado = document.getElementById("txtIdResultado").value;
 
 	descuento = 0.25;
 
