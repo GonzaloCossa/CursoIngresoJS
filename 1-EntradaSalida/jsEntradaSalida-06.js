@@ -19,9 +19,14 @@ function sumar() {
 	numeroUno = document.getElementById("txtIdNumeroUno").value;
 	numeroDos = document.getElementById("txtIdNumeroDos").value;
 
-	//Transformo a entero y realizo la suma
+	//Transformo a enteros
 
-	resultado = parseInt(numeroUno) + parseInt(numeroDos);
+	numeroUno = parseInt(numeroUno);
+	numeroDos = parseInt(numeroDos);
+
+	//Realizo la suma
+
+	resultado = numeroUno + numeroDos;
 
 	//Muestro el resultado obtenido
 
