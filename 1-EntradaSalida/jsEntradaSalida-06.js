@@ -8,15 +8,23 @@ Div B
 */
 function sumar() {
 
+	//Declaro variables
+
 	var numeroUno;
 	var numeroDos;
 	var resultado;
 
+	//Obtención de datos de las ID
+
 	numeroUno = document.getElementById("txtIdNumeroUno").value;
 	numeroDos = document.getElementById("txtIdNumeroDos").value;
 
-	resultado = parseInt(numeroUno) + parseInt(numeroDos)
+	//Transformo a entero y realizo la suma
 
-	alert("La suma es: " + resultado);
+	resultado = parseInt(numeroUno) + parseInt(numeroDos);
+
+	//Muestro el resultado obtenido
+
+	alert("La suma es " + resultado);
 }
 
