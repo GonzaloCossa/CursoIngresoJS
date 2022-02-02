@@ -6,9 +6,8 @@ ej.: "la Resta es 750"
 
 Gonzalo Cossa E/S Ejercicio 7
 Div B
-*/ 
-function sumar()
-{	
+*/
+function sumar() {
 	var numeroUno;
 	var numeroDos;
 	var resultado;
@@ -25,8 +24,7 @@ function sumar()
 
 }
 
-function restar()
-{
+function restar() {
 	var numeroUno;
 	var numeroDos;
 	var resultado;
@@ -42,8 +40,7 @@ function restar()
 	alert("La suma es " + resultado);
 }
 
-function multiplicar()
-{ 
+function multiplicar() {
 	var numeroUno;
 	var numeroDos;
 	var resultado;
@@ -59,8 +56,7 @@ function multiplicar()
 	alert("La suma es " + resultado);
 }
 
-function dividir()
-{
+function dividir() {
 	var numeroUno;
 	var numeroDos;
 	var resultado;
