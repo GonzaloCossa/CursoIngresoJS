@@ -3,7 +3,7 @@ A.	Ingresar tres precios de productos y mostrar la suma de los mismos.
 B.	Ingresar tres precios de productos y mostrar el promedio de los mismos.
 C.	ingresar tres precios de productos  y mostrar precio final (más IVA 21%).
 
-Gonzalo Cossa TP Ejercicio 1 
+Gonzalo Cossa TP N° 1 
 Div B
 */
 function Sumar() {
