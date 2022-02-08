@@ -14,7 +14,6 @@ function mostrar() {
 
 	if (resultado) 
 	{
-		alert(edad + " usted es adolecente");
+		alert("Usted es adolecente.");
 	}
-	
 }//FIN DE LA FUNCIÓN
