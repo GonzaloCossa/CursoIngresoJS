@@ -2,7 +2,7 @@
 
 Alumno: Gonzalo Agustín Cossa
 Div B
-Instrucción 'IF' Ejercicio N°6
+Instrucción 'IF' Ejercicio N°7
 */
 function mostrar()
 {
