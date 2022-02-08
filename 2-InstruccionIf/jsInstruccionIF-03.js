@@ -6,16 +6,15 @@ function mostrar() {
 	edad = document.getElementById("txtIdEdad").value;
 	mayorDeEdad = 18;
 
-	resultado = (edad >= 18) && (mayorDeEdad >= 18);
+	resultado = (edad > 17) && (mayorDeEdad > 17);
 
-	if (resultado) {
-
+	if (resultado) 
+	{
 		alert(edad + " es mayor de edad");
 	}
-	else (!resultado) 
-
+	else{
 		alert(edad + " es menor de edad");
-
+	}
 	
 
 }//FIN DE LA FUNCIÓN
