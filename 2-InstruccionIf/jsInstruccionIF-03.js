@@ -16,10 +16,10 @@ function mostrar() {
 
 	if (resultado) 
 	{
-		alert(edad + " es mayor de edad");
+		alert("Usted es mayor de edad.");
 	}
 	else{
-		alert(edad + " es menor de edad");
+		alert("Usted es menor de edad.");
 	}
 	
 

@@ -15,6 +15,6 @@ function mostrar() {
 	resultado = (edad > 17) && (mayorDeEdad > 17);
 
 	if (resultado) {
-		alert(edad + " es mayor de edad");
+		alert("Usted es mayor de edad.");
 	}
 }//FIN DE LA FUNCIÓN
