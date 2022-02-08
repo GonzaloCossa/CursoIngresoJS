@@ -1,15 +1,14 @@
 function mostrar() {
-	var edadInicial;
+	var edad;
 	var resultado;
 
-	edadInicial = document.getElementById("txtIdEdad").value;
-	edadInicial = parseInt(edadInicial);
+	edad = document.getElementById("txtIdEdad").value;
 	
-	resultado = (edadInicial > 12) && (edadInicial < 18);
+	resultado = (edad > 12) && (edad < 18);
 
 	if (resultado) 
 	{
-		alert(edadInicial + " usted es adolecente");
+		alert(edad + " usted es adolecente");
 	}
 	
 }//FIN DE LA FUNCIÓN
