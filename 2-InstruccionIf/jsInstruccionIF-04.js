@@ -1,3 +1,9 @@
+/*
+
+Alumno: Gonzalo Agustín Cossa
+Div B
+Instrucción 'IF' Ejercicio N°4
+*/
 function mostrar() {
 	var edad;
 	var resultado;
