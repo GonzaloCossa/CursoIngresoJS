@@ -1,5 +1,4 @@
 /*
-
 Alumno: Gonzalo Agustín Cossa
 Div B
 Instrucción 'IF' Ejercicio N°3
@@ -14,13 +13,10 @@ function mostrar() {
 
 	resultado = (edad > 17) && (mayorDeEdad > 17);
 
-	if (resultado) 
-	{
+	if (resultado) {
 		alert("Usted es mayor de edad.");
 	}
-	else{
+	else {
 		alert("Usted es menor de edad.");
 	}
-	
-
 }//FIN DE LA FUNCIÓN
