@@ -1,10 +1,13 @@
 function mostrar()
 {
-	//tomo la edad  
+	var edad = document.getElementById("txtIdEdad").value;
+	var comparacion = 15;
 
-	var edad;
+	edad = parseInt(edad);
+	var resultado = edad == comparacion;
 
-	edad = ("txtIdEdad").value;
-
-	if(edad = 15) ; alert("Niña bonita");
+	if(resultado)
+	{
+		alert("niña bonita");
+	}
 }//FIN DE LA FUNCIÓN
