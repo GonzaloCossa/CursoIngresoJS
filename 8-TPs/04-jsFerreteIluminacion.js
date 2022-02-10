@@ -11,44 +11,80 @@ E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de 
 
 function CalcularPrecio() 
 {
-    var precioDeLamparita;
-    var cantidadDeLamparita;
+    var precioDescuento;
+    var precioTotal;
+    var cantidad;
+    var precioFinal;
     var marca;
-    var precioSinDescuento;
+    var valorIngresosBrutos=0;
+    var descuento;
 
-    precioDeLamparita = 35;
-    cantidadDeLamparita = document.getElementById("txtIdCantidad").value;
+    cantidad = document.getElementById("txtIdCantidad").value;
     marca = document.getElementById("Marca").value;
-    cantidadDeLamparita = parseInt(cantidadDeLamparita);
-    precioSinDescuento = cantidadDeLamparita * precioDeLamparita;
+    cantidad = parseInt (cantidad);
 
-        // Punto A
+    //Precio de las lamparas sin descuento
+    precioTotal = (35*cantidad);
 
-    if(cantidadDeLamparita > 5) 
-    {
-        document.getElementById("txtIdprecioDescuento").value = (precioSinDescuento * 0.50);
-    }
-
-        // Punto B
-
-    if((cantidadDeLamparita == 5) && (marca == "ArgentinaLuz"))
+    if(cantidad > 5){
+        descuento = 0.5; // 50%
+    }else 
+        if(cantidad == 5)
         {
-            document.getElementById("txtIdprecioDescuento").value = (precioSinDescuento * 0.40);
+            if(marca == "ArgentinaLuz")
+            {
+            descuento = 0.6; // 40%
+            }
+            else
+            {
+            descuento = 0.7; // 30%
+            }
         }
+    else 
+        if(cantidad == 4)
+        {
+            if(marca == "ArgentinaLuz" || marca == "FelipeLamparas")
+            {   
+            descuento = 0.75; // 25%
+            }
+            else
+            {
+            descuento = 0.8; // 20%
+            }
+    }else 
+        if(cantidad == 3)
+        {
+        if(marca == "ArgentinaLuz" )
+            {
+            descuento = 0.85; // 15%
+            }
         else 
-        {  
-            document.getElementById("txtIdprecioDescuento").value = (precioSinDescuento * 0.30);
-        }
-
-        // Punto C
-
-    if((cantidadDeLamparita == 4) && (marca == "ArgentinaLuz" || marca == "FelipeLamparas"))
-    {
-        document.getElementById("txtIdprecioDescuento").value = (precioSinDescuento * 0.25);
-    }
+            if(marca == "FelipeLamparas")
+            {
+            descuento = 0.9; // 10%
+            }
         else
-        {
-            document.getElementById("txtIdprecioDescuento").value = (precioSinDescuento * 0.20);
+            {
+            descuento = 0.95; // 5%
+            }
         }
-}
+    else
+        {
+        descuento = 1; // Precio base
+        }
 
+        //Aplico descuento
+    precioDescuento =  precioTotal * descuento;
+
+        //Ingresos brutos
+    if(precioDescuento > 120){
+        valorIngresosBrutos = precioDescuento * 0.1; //Ingresos brutos del 10%;
+        alert("De IIBB usted pago " + valorIngresosBrutos);
+    }
+
+        //Aplico ingresos brutos si corresponde
+    precioFinal = precioDescuento + valorIngresosBrutos;
+
+        //Muestro el precio
+    document.getElementById("txtIdprecioDescuento").value = precioFinal;
+}
