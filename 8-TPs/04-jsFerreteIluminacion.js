@@ -31,8 +31,7 @@ function CalcularPrecio()
 
         // Punto B
 
-    else
-        if((cantidadDeLamparita == 5) && (marca == "ArgentinaLuz"))
+    if((cantidadDeLamparita == 5) && (marca == "ArgentinaLuz"))
         {
             document.getElementById("txtIdprecioDescuento").value = (precioSinDescuento * 0.40);
         }
