@@ -16,18 +16,20 @@ function CalcularPrecio()
     var cantidad;
     var precioFinal;
     var marca;
-    var valorIngresosBrutos=0;
+    var valorIngresosBrutos = 0;
     var descuento;
 
     cantidad = document.getElementById("txtIdCantidad").value;
     marca = document.getElementById("Marca").value;
-    cantidad = parseInt (cantidad);
+    cantidad = parseInt(cantidad);
 
     //Precio de las lamparas sin descuento
-    precioTotal = (35*cantidad);
+    precioTotal = (35 * cantidad);
 
+    //A
     if(cantidad > 5){
         descuento = 0.5; // 50%
+    //B
     }else 
         if(cantidad == 5)
         {
@@ -40,6 +42,7 @@ function CalcularPrecio()
             descuento = 0.7; // 30%
             }
         }
+    //C
     else 
         if(cantidad == 4)
         {
@@ -51,10 +54,11 @@ function CalcularPrecio()
             {
             descuento = 0.8; // 20%
             }
+    //D
     }else 
         if(cantidad == 3)
         {
-        if(marca == "ArgentinaLuz" )
+            if(marca == "ArgentinaLuz" )
             {
             descuento = 0.85; // 15%
             }
@@ -68,6 +72,7 @@ function CalcularPrecio()
             descuento = 0.95; // 5%
             }
         }
+    //Si no se aplica descuento
     else
         {
         descuento = 1; // Precio base
@@ -77,10 +82,11 @@ function CalcularPrecio()
     precioDescuento =  precioTotal * descuento;
 
         //Ingresos brutos
-    if(precioDescuento > 120){
-        valorIngresosBrutos = precioDescuento * 0.1; //Ingresos brutos del 10%;
+    if(precioDescuento > 120)
+        {
+        valorIngresosBrutos = precioDescuento * 0.1; //Ingresos brutos del 10%
         alert("De IIBB usted pago " + valorIngresosBrutos);
-    }
+        }
 
         //Aplico ingresos brutos si corresponde
     precioFinal = precioDescuento + valorIngresosBrutos;
