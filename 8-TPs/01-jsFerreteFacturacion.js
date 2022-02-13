@@ -6,61 +6,66 @@ C.	ingresar tres precios de productos  y mostrar precio final (más IVA 21%).
 Gonzalo Cossa TP N° 1 
 Div B
 */
-function Sumar() {
-    var precioUno
-    var precioDos
-    var precioTres
-    var sumaTotal
+function Sumar() { 
+var preciouno;
+var preciodos;
+var preciotres;
+var resultado;
 
-    precioUno = document.getElementById("txtIdPrecioUno").value;
-    precioDos = document.getElementById("txtIdPrecioDos").value;
-    precioTres = document.getElementById("txtIdPrecioTres").value;
+preciouno = document.getElementById("txtIdPrecioUno").value;
+preciouno = parseInt(preciouno);
 
-    precioUno = parseInt(precioUno);
-    precioDos = parseInt(precioDos);
-    precioTres = parseInt(precioTres);
+preciodos= document.getElementById("txtIdPrecioDos").value;
+preciodos = parseInt(preciodos);
 
-    sumaTotal = precioUno + precioDos + precioTres;
+preciotres = document.getElementById("txtIdPrecioTres").value;
+preciotres = parseInt(preciotres);
 
-    alert("La suma total es " + sumaTotal);
+resultado = preciouno + preciodos + preciotres;
+
+alert(resultado);
 
 }
+    
 function Promedio() {
-    var precioUno
-    var precioDos
-    var precioTres
-    var promedio
 
-    precioUno = document.getElementById("txtIdPrecioUno").value;
-    precioDos = document.getElementById("txtIdPrecioDos").value;
-    precioTres = document.getElementById("txtIdPrecioTres").value;
+var preciouno;
+var preciodos;
+var preciotres;
+var resultado;
 
-    precioUno = parseInt(precioUno);
-    precioDos = parseInt(precioDos);
-    precioTres = parseInt(precioTres);
+preciouno = document.getElementById("txtIdPrecioUno").value;
+preciouno = parseInt(preciouno);
 
-    promedio = ((precioUno + precioDos + precioTres) / 3);
+preciodos= document.getElementById("txtIdPrecioDos").value;
+preciodos = parseInt(preciodos);
 
-    alert("El promedio es " + promedio);
+preciotres = document.getElementById("txtIdPrecioTres").value;
+preciotres = parseInt(preciotres);
+
+resultado = (preciouno + preciodos + preciotres) / 3;
+
+alert(resultado);
+
 }
+    
 function PrecioFinal() {
-    var precioUno;
-    var precioDos;
-    var precioTres;
-    var porcentajeIva;
-    var precioFinal;
+    var preciouno;
+    var preciodos;
+    var preciotres;
+    var resultado;
+    
+    preciouno = document.getElementById("txtIdPrecioUno").value;
+    preciouno = parseInt(preciouno);
+    
+    preciodos= document.getElementById("txtIdPrecioDos").value;
+    preciodos = parseInt(preciodos);
+    
+    preciotres = document.getElementById("txtIdPrecioTres").value;
+    preciotres = parseInt(preciotres);
+    
+    resultado = (preciouno + preciodos + preciotres) * 0.21;
+    
+    alert(resultado);
 
-    precioUno = document.getElementById("txtIdPrecioUno").value;
-    precioDos = document.getElementById("txtIdPrecioDos").value;
-    precioTres = document.getElementById("txtIdPrecioTres").value;
-    porcentajeIva = 0.21;
-
-    precioUno = parseInt(precioUno);
-    precioDos = parseInt(precioDos);
-    precioTres = parseInt(precioTres);
-
-    sumaPrecios = (precioUno + precioDos + precioTres);
-    precioFinal = sumaPrecios + (sumaPrecios * porcentajeIva);
-
-    alert("El precio final es " + precioFinal);
 }
