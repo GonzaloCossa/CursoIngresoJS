@@ -2,15 +2,15 @@ function mostrar()
 {
 	//tomo el mes
 
-	var mesDelAño;
+	var mesDelAnio;
 
-	mesDelAño = document.getElementById("txtIdMes").value;
+	mesDelAnio = document.getElementById("txtIdMes").value;
 
-	switch(mesDelAño)
+	switch(mesDelAnio)
 	{
 	case "Julio":
 	case "Agosto":
-		alert("Es " + mesDelAño + " Abrigate que hace frio." );
+		alert("Es " + mesDelAnio + " Abrigate que hace frio." );
 		break;
 	
 	case "Enero":
@@ -19,7 +19,7 @@ function mostrar()
 	case "Abril":
 	case "Mayo":
 	case "Junio":
-		alert("Es " + mesDelAño + " Falta para el invierno." );
+		alert("Es " + mesDelAnio + " Falta para el invierno." );
 		break;
 		
 	default:
