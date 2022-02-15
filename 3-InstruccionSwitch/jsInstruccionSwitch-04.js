@@ -1,3 +1,6 @@
+/* Gonzalo Cossa 
+Ejercicio SWITCH 04
+Div B */
 function mostrar()
 {
 	var mesDelAnio;

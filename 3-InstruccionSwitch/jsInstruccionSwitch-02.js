@@ -1,3 +1,6 @@
+/* Gonzalo Cossa 
+Ejercicio SWITCH 02
+Div B */
 function mostrar()
 {
 	//tomo el mes
