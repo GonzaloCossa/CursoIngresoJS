@@ -1,3 +1,6 @@
+/* Gonzalo Cossa 
+Ejercicio SWITCH 09
+Div B */
 function mostrar()
 {
 	var estacionDeAnio;

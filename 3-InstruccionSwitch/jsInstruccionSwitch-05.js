@@ -1,3 +1,6 @@
+/* Gonzalo Cossa 
+Ejercicio SWITCH 05
+Div B */
 function mostrar()
 {
 	//tomo la hora

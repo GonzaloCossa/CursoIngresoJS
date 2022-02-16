@@ -1,3 +1,6 @@
+/* Gonzalo Cossa 
+Ejercicio SWITCH 08
+Div B */
 function mostrar()
 {
 	var destinoIngresado;
