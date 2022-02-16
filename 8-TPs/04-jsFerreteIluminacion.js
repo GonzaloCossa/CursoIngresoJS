@@ -34,59 +34,49 @@ function CalcularPrecio()
             case 1:
             case 2:
                 descuento = 1;
-                break;
+            break;
             
             case 3:
                 switch(marca)
-                    {
+                {
                     case "ArgentinaLuz":
-                        descuento = 0.85;
+                        descuento = 0.85;//DESCUENTO 15%
                     break;
-                    
+
                     case "FelipeLamparas":
-                        descuento = 0.9;
+                        descuento = 0.9;//DESCUENTO 10%
                     break;
 
                     default:
-                        descuento = 0.95;
+                        descuento = 0.95;//DESCUENTO 5%
                     break;
-                    }
-                break;
-
+                }
             case 4:
-
-                switch(marca)
-                    {
-                    case "ArgentinaLuz":
-                    case "FelipeLamparas":
-                        descuento = 0,75;
-                    break;
-
-                    default:
-                        descuento = 0.8;
-                    break;
+                    if(marca == "ArgentinaLuz" || marca == "FelipeLamparas")
+                    {   
+                    descuento = 0.75; // 25%
                     }
+                    else
+                    {
+                    descuento = 0.8; // 20%
+                    }   
                 break;
 
             case 5:
-
-                switch(marca)
+                    if(marca == "ArgentinaLuz")
                     {
-                    case "ArgentinaLuz":
-                        descuento = 0.6;
-                    break;
-
-                    default:
-                        descuento = 0.7;
-                    break;
+                    descuento = 0.6; // 40%
                     }
+                    else
+                    {
+                    descuento = 0.7; // 30%
+                    }  
                 break;
             
-            default:
-                descuento = 0.5;
-            break; 
+            default: 
+                descuento = 0.5; // 50%
+            break;   
         }
-
     precioConDescuento =  precio * descuento;
 
     //E
@@ -96,7 +86,7 @@ function CalcularPrecio()
         alert("De IIBB usted pago " + valorIngresosBrutos);
         }
 
-    precioConIIBB = precioDescuento + valorIngresosBrutos;
+    precioConIIBB = precioConDescuento + valorIngresosBrutos;
 
     document.getElementById("txtIdprecioDescuento").value = precioConIIBB;
 }
