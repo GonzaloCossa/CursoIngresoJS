@@ -79,7 +79,6 @@ function CalcularPrecio()
         }
     precioConDescuento =  precio * descuento;
 
-    //E
     if(precioConDescuento > 120)
         {
         valorIngresosBrutos = precioConDescuento * 0.1; //Ingresos brutos del 10%
