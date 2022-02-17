@@ -12,7 +12,7 @@ function mostrar()
 
 	while(numero < 10 )
 	{
-		numero = numero + 1;
+		numero = numero ++;
 		console.log(numero);
 	} 
 }//FIN DE LA FUNCIÓN

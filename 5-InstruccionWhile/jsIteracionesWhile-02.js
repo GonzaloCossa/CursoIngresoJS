@@ -10,9 +10,9 @@ function mostrar()
 
 	numero = 11
 
-	while(numero > 0 )
+	while(numero > 1 )
 	{
-		numero = numero - 1;
+		numero = numero --;
 		console.log(numero);
 	} 
 }//FIN DE LA FUNCIÓN
