@@ -1,6 +1,9 @@
 /*
 Al presionar el botón pedir un sexo
-'f' para femenino, 'm' para masculino.*/
+'f' para femenino, 'm' para masculino.
+Gonzalo Cossa
+Div B Ej N°5 WHILE
+*/
 function mostrar()
 {
 	var sexoIngresado;
