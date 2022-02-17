@@ -1,6 +1,8 @@
 /*
 Al presionar el botón pedir  números  hasta que el USUARIO QUIERA 
 e informar la suma acumulada y el promedio.
+Gonzalo Cossa
+Div B Ej N°7 WHILE 
 */
 function mostrar()
 {
