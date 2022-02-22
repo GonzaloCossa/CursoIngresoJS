@@ -1,5 +1,9 @@
 function mostrar()
 {
+	var repeticiones;
 
-	alert("ok");
+	for(repeticiones = 10; repeticiones > 0 ; repeticiones --)
+	{
+		document.write(repeticiones + "<br>");
+	}
 }
