@@ -1,6 +1,9 @@
 /*
 Al presionar el botón pedir  números  hasta que el usuario quiera,
-mostrar el número máximo y el número mínimo ingresado.*/
+mostrar el número máximo y el número mínimo ingresado.
+Gonzalo Cossa
+Div B Ej N°9 WHILE
+*/
 function mostrar()
 {	// declarar variables
 	var bandera;
