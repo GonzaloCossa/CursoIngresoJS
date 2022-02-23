@@ -17,20 +17,26 @@ function mostrar() {
 	var precio;
 	var cantidadDeUnidades;
 	var marca;
+	var masUnidadesPorTipo;
 	var fabricante;
-	var repeticion = 0;
+	var promedioCompra;
 	var alcoholMasBarato;
 	var fabricanteAlcoholMasBarato; 
 	var cantidadAlcoholMasBarato;
+
+	var repeticion = 0;
 	var totalUnidadAlcohol = 0;
 	var totalUnidadBarbijo = 0;
 	var totalUnidadJabon = 0;
+	var contadorUnidadAlcohol = 0;
+	var contadorUnidadBarbijo = 0;
+	var contadorUnidadJabon = 0;
 
 	while (repeticion < 5) 
 	{
 		tipoDeProducto = prompt("Ingrese un tipo de producto: Barbijo, Jabón o Alcohol.");
 
-		while (tipoDeProducto != "barbijo" && tipoDeProducto != "jabón" && tipoDeProducto != "alcohol") 
+		while (tipoDeProducto != "barbijo" && tipoDeProducto != "jabon" && tipoDeProducto != "alcohol") 
 		{
 			tipoDeProducto = prompt("Ingrese un producto valido.");
 		}
@@ -79,22 +85,49 @@ function mostrar() {
 			case"alcohol":
 			{
 				totalUnidadAlcohol = totalUnidadAlcohol + cantidadDeUnidades;
+				contadorUnidadAlcohol ++;
 			}
 			break;
 
 			case"barbijo":
 			{
 				totalUnidadBarbijo = totalUnidadBarbijo + cantidadDeUnidades;
+				contadorUnidadBarbijo ++;
 			}
 			break;
 
-			case"jabón":
+			case"jabon":
 			{
 				totalUnidadJabon = totalUnidadJabon + cantidadDeUnidades;
+				contadorUnidadJabon ++;
 			}
 			break;
 		}
-
 		repeticion++;
 	}
+	if(totalUnidadBarbijo > totalUnidadJabon && totalUnidadBarbijo > totalUnidadAlcohol)
+	{
+		promedioCompra = totalUnidadBarbijo / contadorUnidadBarbijo;
+		masUnidadesPorTipo = "Barbijo";
+	}	
+	
+	else
+	{
+			if(totalUnidadAlcohol > totalUnidadBarbijo && totalUnidadAlcohol > totalUnidadJabon)
+			{
+				promedioCompra = totalUnidadAlcohol / contadorUnidadAlcohol;
+				masUnidadesPorTipo = "Alcohol";
+			}
+			
+			else
+			{
+				promedioCompra = totalUnidadJabon / contadorUnidadJabon;
+				masUnidadesPorTipo = "Jabón";
+			}
+		}
+
+		document.write("<br>Alcohol mas barato cantidad: " + cantidadAlcoholMasBarato + ", su fabricante es: " + fabricanteAlcoholMasBarato);
+		document.write("<br>tipo mas unidades: " + masUnidadesPorTipo + ". Su promedio por compra es: " + promedioCompra);
+		//C
+		document.write("<br>cantidad jabon comprado: " + totalUnidadJabon);
 }
