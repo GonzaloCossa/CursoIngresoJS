@@ -60,30 +60,27 @@ function mostrar() {
 		marca = prompt("Ingrese una marca.");
 		fabricante = prompt("Ingrese un fabricante.");
 
-		//A
-		if (tipoDeProducto == "alcohol") 
-		{
-			if (repeticion == 0) 
-			{
-				alcoholMasBarato = precio;
-				fabricanteAlcoholMasBarato = fabricante;
-				cantidadAlcoholMasBarato = cantidadDeUnidades;
-			}
-			else
-			{
-				if (precio < alcoholMasBarato) 
-				{
-					alcoholMasBarato = precio;
-					fabricanteAlcoholMasBarato = fabricante;
-					cantidadAlcoholMasBarato = cantidadDeUnidades;
-				}
-			}
-		}
 		//B
 		switch(tipoDeProducto)
 		{
 			case"alcohol":
 			{
+				if (repeticion == 0) 
+				{
+					alcoholMasBarato = precio;
+					fabricanteAlcoholMasBarato = fabricante;
+					cantidadAlcoholMasBarato = cantidadDeUnidades;
+				}
+				else
+				{
+					if (precio < alcoholMasBarato) 
+					{	
+						alcoholMasBarato = precio;
+						fabricanteAlcoholMasBarato = fabricante;
+						cantidadAlcoholMasBarato = cantidadDeUnidades;
+					}
+				}
+
 				totalUnidadAlcohol = totalUnidadAlcohol + cantidadDeUnidades;
 				contadorUnidadAlcohol ++;
 			}
