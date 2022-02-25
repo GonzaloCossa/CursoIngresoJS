@@ -109,7 +109,7 @@ function mostrar() {
 	}	
 	
 	else
-	{
+		{
 			if(totalUnidadAlcohol > totalUnidadBarbijo && totalUnidadAlcohol > totalUnidadJabon)
 			{
 				promedioCompra = totalUnidadAlcohol / contadorUnidadAlcohol;
